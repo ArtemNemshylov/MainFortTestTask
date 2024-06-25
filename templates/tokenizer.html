@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Tokenizer</title>
+</head>
+<body>
+<h1>Text Tokenizer</h1>
+<form action="/tokenize" method="post">
+    <textarea name="text" rows="4" cols="50"></textarea><br><br>
+    <input type="submit" value="Tokenize">
+</form>
+{% if tokens %}
+<h2>Tokens:</h2>
+<p>{tokens: { {{tokens}} }}</p>
+{% endif %}
+</body>
+</html>
