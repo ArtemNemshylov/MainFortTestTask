@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Named Entity Recognition (NER)</title>
+</head>
+<body>
+<h1>Named Entity Recognition (NER)</h1>
+<form action="/chunk" method="post">
+    <textarea name="text" rows="4" cols="50"></textarea><br><br>
+    <input type="submit" value="submit :)">
+</form>
+{% if entities %}
+<h2>Entities :</h2>
+<p>{Entities: { {{entities}} }}</p>
+{% endif %}
+</body>
+</html>

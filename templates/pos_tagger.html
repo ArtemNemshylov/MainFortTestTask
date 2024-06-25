@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text partial language markup.</title>
+</head>
+<body>
+<h1>Text partial language markup</h1>
+<form action="/pos_tag" method="post">
+    <textarea name="text" rows="4" cols="50"></textarea><br><br>
+    <input type="submit" value="submit">
+</form>
+{% if pos_tags %}
+<h2>pos tags:</h2>
+<p>{pos tags: { {{pos_tags}} }}</p>
+{% else %}
+<h2>No pos tags found</h2>
+{% endif %}
+</body>
+</html>
